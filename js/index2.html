@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <style>
+            body h1{
+                text-align: center;
+                margin-top: 50%;
+            }
+            body{
+                background-color: hsl(143, 66%, 48%);
+                color:white;
+                font-family:  'Patrick Hand', cursive;
+                font-size: 30px;
+                transition: background 1s;
+            }
+        </style>
+    </head>
+    <body onload="setBg()" id="main">
+        <h1>Welcome to my page!</h1>
+
+        <script>
+            function generatRandomNumber(max){
+                return Math.ceil(Math.random()*max)
+            }
+
+            function generateRandomColor(){
+                var h = generatRandomNumber(360);
+                var s = generatRandomNumber(100);
+                var l = generatRandomNumber(100);
+                return "hsl("+h+","+s+"%,"+l+"%)" 
+            }
+            function setBg(){
+                document.getElementById("main").style.backgroundColor=generateRandomColor();
+            }
+            setInterval(setBg,2000)
+        </script>
+    </body>
+</html>

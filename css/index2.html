@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Styled Survey</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body{
+                background-color: bisque !important;
+            }
+        </style>
+    </head>
+    <body >
+        <h1>Student Survey!</h1>
+
+        <!-- form input begins -->
+
+        <form id="form">
+            <div class="form-control">
+                <label for="name" id="label-name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your Name">
+            </div>
+
+            <div class="form-control">
+                <label for="email" id="label-email">Student ID:</label>
+                <input type="text" id="email" placeholder="Enter your Email">
+            </div>
+
+            <div class="form-control">
+                <label for="contacte" id="label-contact">Contact No:</label>
+                <input type="text" id="contact" placeholder="Enter your Contact Number">
+            </div>
+
+            <div class="form-control">
+                <label>Your Role:</label>
+                <select name="role" id="role">
+                    <option value="student">Student</option>
+                    <option value="faculty">Teacher</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label>Did you Finish your Homework?:</label>
+                <input type="radio" 
+                    id="option-yes"
+                    name="radio-homework">Yes</input> 
+                <input type="radio" 
+                    id="option-No"
+                    name="radio-homework">No</input>
+            </div>
+
+            <div class="form-control">
+               <label>Languages you code in:</label>
+
+               <label for="python">
+                <input type="checkbox" name="language">Python</input>
+               </label>
+               
+               <label for="C">
+                <input type="checkbox" name="language">C</input>
+               </label>
+
+               <label for="Java">
+                <input type="checkbox" name="language">Java</input>
+               </label>
+            </div>
+
+            <div class="form-control">
+                <label for="suggestion">Any other Suggestions?</label>
+                <textarea id="suggestion" placeholder="Add any suggestions"></textarea>
+
+            </div>
+            <div class="form-control">
+                <button type="submit" value="submit">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+
+    </body>
+</html>

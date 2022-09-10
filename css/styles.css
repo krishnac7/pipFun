@@ -1,0 +1,15 @@
+body {
+    background-color: #499e89;
+    font-family:Verdana;
+    text-align: center;
+}
+form{
+    background-color: azure;
+    max-width: 500px;
+    padding:13px;
+    margin:40px;
+    box-shadow:2px 5px 10px rgba(0,0,0,0.7)
+}
+.form-control{
+    margin-bottom: 5px;
+}
